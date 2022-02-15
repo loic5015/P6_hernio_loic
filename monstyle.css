@@ -1,3 +1,39 @@
+body {
+  background-color: black;
+  color:  white;
+}
+
+
+
+#picture div {
+    display:  inline-block;
+    padding:  20px;
+}
+
+p {
+  display: inline;
+}
+
+p a {
+  display: inline-block;
+  width: 200px;
+  padding: 5px 10px;
+}
+
+#picture p a {
+  float:  left;
+}
+
+#main_categorie {
+  clear: left;
+}
+
+.modal-content p img {
+  float:  left;
+  padding:  30px;
+}
+
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -14,7 +50,7 @@
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: black;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
@@ -31,7 +67,7 @@
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: white;
   text-decoration: none;
   cursor: pointer;
 }

@@ -83,16 +83,21 @@ async function displayhighRatedMovie (url){
 	    return response.json()})
 		.then(data => {
 				let picture = document.getElementById("picture");
+				let div1 = document.createElement("div")
+				let div2 = document.createElement("div")
 				let a = document.createElement("a")
 				let h3 = document.createElement("h3")
 				a.setAttribute("href",data["url"])
 				a.classList.add("openModal");
 				a.innerHTML = "<img src='"+data["image_url"]+"'/>"
+				div1.appendChild(a)
 				let p = document.createElement("p")
 				p.innerHTML = "<button type='button'>Add to favorite</button></br>"+data['description']
 				h3.innerHTML = data["title"]
-				picture.appendChild(h3)
-				picture.appendChild(p).appendChild(a)
+				div2.appendChild(h3)
+				div2.appendChild(p)
+				picture.appendChild(div1)
+				picture.appendChild(div2)
 		})
 }
 
