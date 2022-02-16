@@ -14,11 +14,13 @@ p {
   display: inline;
 }
 
-p a {
+.openModal {
   display: inline-block;
   width: 200px;
-  padding: 5px 10px;
+  padding: 5px 10px 0px 10px;
 }
+
+
 
 #picture p a {
   float:  left;
@@ -28,11 +30,33 @@ p a {
   clear: left;
 }
 
-.modal-content p img {
-  float:  left;
-  padding:  30px;
+
+
+.paraLeftArrow, .paraRighttArrow { 
+  width: 50px;
+  color: white;
+  text-decoration: none;
+  margin-left:auto;
+  margin-right:auto;
+  
 }
 
+.leftArrow, .rightArrow {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 45px;
+ 
+}
+
+.leftArrow:hover,
+.leftArrow:focus, 
+.rightArrow:hover,
+.rightArrow:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 /* The Modal (background) */
 .modal {
