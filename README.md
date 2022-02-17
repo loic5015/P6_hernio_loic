@@ -1,4 +1,4 @@
-#<h1>manage chess tournaments</h1>
+#<h1>justStreamIt</h1>
 
 #<h2> General info </h2>
 #<h3>This script is displaying movies of different categories</h3>
