@@ -1,7 +1,0 @@
-http://127.0.0.1:8000/api/v1/titles/?sort_by=-imdb_score
-
-http://127.0.0.1:8000/api/v1/titles/?sort_by=-imdb_score&genre=romance
-
-http://127.0.0.1:8000/api/v1/titles/?sort_by=-imdb_score&genre=action
-
-http://127.0.0.1:8000/api/v1/titles/?sort_by=-imdb_score&genre=drama
