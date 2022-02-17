@@ -1,17 +1,69 @@
 body {
   background-color: black;
   color:  white;
+  text-align: center;
 }
 
+header {
+  background-color: #303030;
+  text-align: left;
+  width: 900px;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+#menu{
+  float:  right;
+  padding-right: 20px;
+  padding-top: 30px;
+}
+
+#title{
+  padding-left: 20px;
+}
+
+#picture{
+  border-color: white;
+}
+
+header div{
+  display:  inline-block;
+}
+
+header div a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+button {
+  background-color: red;
+  color: white;
+  border-radius: 25px;
+  width: 100px;
+}
+
+#picture{
+  border:  2px solid white;
+  width: 900px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left:auto;
+  margin-right:auto;
+}
 
 
 #picture div {
     display:  inline-block;
-    padding:  20px;
+    padding:  10px;
+    text-align:  left;
+
 }
 
 p {
   display: inline;
+
 }
 
 .openModal {
@@ -26,26 +78,14 @@ p {
   float:  left;
 }
 
-#main_categorie {
-  clear: left;
-}
-
-
-
-.paraLeftArrow, .paraRighttArrow { 
-  width: 50px;
-  color: white;
-  text-decoration: none;
-  margin-left:auto;
-  margin-right:auto;
-  
-}
 
 .leftArrow, .rightArrow {
   color: white;
   text-decoration: none;
   font-weight: bold;
   font-size: 45px;
+  vertical-align: center;
+
  
 }
 
@@ -79,6 +119,7 @@ p {
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+  text-align:  left;
 }
 
 /* The Close Button */
@@ -95,3 +136,4 @@ p {
   text-decoration: none;
   cursor: pointer;
 }
+

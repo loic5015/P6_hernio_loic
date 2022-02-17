@@ -49,7 +49,7 @@ async function fetchText(movies) {
 		
 		})
 }
-
+// create the right arrow for each category
 function rightArrow(){
 	let category = document.getElementById(movies.category);
 	let a = document.createElement("a")
@@ -60,7 +60,7 @@ function rightArrow(){
 	p.classList.add("paraRightArrow")
 	category.appendChild(p).appendChild(a)
 }
-
+//create the left arrow for each category
 function leftArrow(){
 	let category = document.getElementById(movies.category);
 	let a = document.createElement("a")
@@ -72,6 +72,8 @@ function leftArrow(){
 	category.appendChild(p).appendChild(a)
 }
 
+
+//display the movies
 function displayCategory(result){
 	let category = document.getElementById(movies.category);
 	let a = document.createElement("a")
@@ -89,6 +91,7 @@ async function fetchUrl(listUrl) {
 		
 		
 	}
+	//manage the status display
 	for (category of categories){
 		let div = document.getElementById(category);
 		let pDisplay = div.querySelectorAll(".paraOpenModal");
@@ -106,10 +109,9 @@ async function fetchUrl(listUrl) {
 		}
 	}
 
-
-
 	await displayhighRatedMovie(hightRatedMovie)
 
+	//open the modal for each movie
 	listA = document.getElementsByClassName('openModal')
 	for (a of listA){
 		a.addEventListener("click", function(event) {   
@@ -121,6 +123,7 @@ async function fetchUrl(listUrl) {
 
 	)
 }
+		//manage the scroll right of the movies
 		for (category of categories){
 			let div = document.getElementById(category)
 			let aRightArrow = div.querySelector(".rightArrow");
@@ -145,7 +148,7 @@ async function fetchUrl(listUrl) {
 		)
 
 	}
-
+	//manage the scroll left of the movies
 	for (category of categories){
 			let divLeft = document.getElementById(category)
 			let aLeftArrow = divLeft.querySelector(".leftArrow");
@@ -174,7 +177,7 @@ async function fetchUrl(listUrl) {
 
 
 }
-
+//manage the high rate movie
 async function displayhighRatedMovie (url){
 
 	await fetch(url).then(response => {
@@ -194,15 +197,15 @@ async function displayhighRatedMovie (url){
 				a.innerHTML = "<img src='"+data["image_url"]+"'/>"
 				div1.appendChild(a)
 				let p = document.createElement("p")
-				p.innerHTML = "<button type='button'>Add to favorite</button></br>"+data['description']
+				p.innerHTML = "<button type='button'>Play</button></br>"+data['description']
 				h3.innerHTML = data["title"]
 				div2.appendChild(h3)
 				div2.appendChild(p)
-				picture.appendChild(div1)
 				picture.appendChild(div2)
+				picture.appendChild(div1)
 		})
 }
-
+//management modal
 function openModal(urlMovie, a){
 	fetch(urlMovie).then(response => {
 	    if (!response.ok) {
